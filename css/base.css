@@ -1,0 +1,110 @@
+.naoSelecionavel {
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+body{
+    height:100%;
+    width:100%;
+    background-color:#121212;
+}
+.money{
+    margin-top:10vh;
+}
+.money, .botaohome, .store{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.buttonhome{
+    margin-top:3vh;
+    height:8vh;
+    width:30vh;
+    font-size:large;
+    border-radius:12px;
+    background:linear-gradient(120deg, #73ddf7 0%, #8da2cd 100%);
+    border-color:black;
+    color:rgb(256, 256, 256);
+    text-shadow:2vh;
+    font-weight:700;
+}
+.buttonhome:hover, .buttonstore:hover{
+    background:linear-gradient(120deg, #73ddf7 0%, #778fc0 100%);
+    cursor:pointer;
+}
+.buttonstore{
+    margin-top:3vh;
+    height:9vh;
+    width:35vh;
+    font-size:large;
+    border-radius:12px;
+    background:linear-gradient(120deg, #73ddf7 0%, #8da2cd 100%);
+    border-color:black;
+    color:rgb(256, 256, 256);
+    text-shadow:2vh;
+    font-weight:700;
+    display:block;
+    cursor:pointer;
+}
+.items, .yourstore{
+    margin-top:7vh;
+}
+.titulomarketplace{
+    font-size:xx-large;
+    text-align:center;
+    color:#d1d1d1;
+}
+.marketplacenum{
+    font-size:medium;
+    color:#2e2e2e;
+}
+.dinheiro{
+    font-size:xx-large;
+    text-align:center;
+    color:#d1d1d1;
+}
+.header-main-header{
+    padding:10px;
+    display:flex;
+}
+.header-stats-main{
+    padding:10px;
+    display:flex;
+}
+.header-main-header-stats{
+    margin-left:10px;
+}
+.header-link-otherpages{
+    padding:10px;
+    display:flex;
+    justify-content:right;
+    align-items:right;
+    height:100%;
+    width:100%;
+}
+.aheader-link-otherpages{
+    color:#d1d1d1;
+    padding:10px;
+}.aheader-link-otherpages:hover{
+    color:#c5c5c5;
+    text-decoration:underline;
+    padding:10px;
+}
+.footer{
+    padding-top:20px;
+}
+
+/*sobre.html*/
+
+.home-sobrehtml{
+    text-align:center;
+    padding-left:15vh;
+    padding-right:15vh;
+}
+.text-home-sobrehtml{
+    margin-top:5vh;
+}
