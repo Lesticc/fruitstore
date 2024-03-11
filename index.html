@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./js/index.js"></script>
+  <script src="./js/variaveis.js"></script>
+  <script src="./js/index.js"></script> 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/import.css">
   <link rel="stylesheet" href="./css/base.css">
@@ -15,16 +16,18 @@
     <div class="header">
       <header class="header-main-header">
         <div class="header-stats-main">
+        </div>
+        <div class="header-stats-main">
           <div class="moneymakediv header-main-header-stats"><p class="lato-bold">Dinheiro feito: <span id="makemoney">0</span></p></div>
           <div class="moneywaste header-main-header-stats"><p class="lato-bold">Dinheiro gasto: <span id="wastemoney">0</span></p></div>
           <div class="moneytotal header-main-header-stats"><p class="lato-bold">Total: <span id="totalmoney">0</span></p></div>
         </div>
         <div class="header-link-otherpages">
-          <ul>
+          <ul> 
             <a href="./ajuda.html" class="lato-bold aheader-link-otherpages" target="_blank">Ajuda</a>
             <a href="./sobre.html" class="lato-bold aheader-link-otherpages" target="_blank">Sobre</a>
-          </ul>
-        </div>
+          </ul> 
+        </div>  
       </header>
     </div>
     <div class="home">
@@ -32,32 +35,55 @@
         <p class="poppins-semibold dinheiro naoSelecionavel">Dinheiro: <span id="money" class="spanmoney">0</span></p>
       </div>
       <div class="indexhome">
+        <div class="botaohomedpc">
+          <p class="poppins-semibold naoSelecionavel">Dinheiro p/Click: <span id="dpc">1</span></p>
+        </div>
         <div class="botaohome">
           <button class="buttonhome naoSelecionavel" id="botao">Ganhar dinheiro</button>
         </div>
         <div class="botaohome">
           <p class="poppins-semibold naoSelecionavel">Dinheiro p/Segundo: <span id="cps">0</span></p>
-        </div>
       </div>
         <div class="items">
           <div class="titulo">
-            <h1 class="titulomarketplace poppins-semibold">Atacadão</h1>
+            <h1 class="titulomarketplace poppins-semibold naoSelecionavel">Atacadão</h1>
           </div>
         <div class="store">
           <div class="storelista">
-            <button class="buttonstore" id="marketplaceone">R$5 Maçã <span class="marketplacenum">Quant: <span id="applenum">0</span></button>
-            <button class="buttonstore" id="marketplacetwo">R$7 Melancia <span class="marketplacenum">Quant: <span id="watermelonnum">0</span></button>
+            <button class="buttonstore naoSelecionavel" id="marketplaceone"><span id="itemnumeroum">R$5 Maçã</span><span class="marketplacenum">Quant: <span id="applenum">0</span></button>
+            <button class="buttonstore naoSelecionavel" id="marketplacetwo"><span id="itemnumerodois">R$7 Melancia</span><span class="marketplacenum">Quant: <span id="watermelonnum">0</span></button>
+            <button class="buttonstore naoSelecionavel" id="marketplacethr"><span id="itemnumerotres">R$10 Abacaxi</span><span class="marketplacenum">Quant: <span id="pineapplenum">0</span></button>
           </div>
         </div>
       </div>
       <div class="yourstore">
         <div class="titulo">
-          <h1 class="titulomarketplace poppins-semibold">Sua Loja</h1>
+          <h1 class="titulomarketplace poppins-semibold naoSelecionavel">Sua Loja</h1>
         </div>
         <div class="store">
           <div class="storelista">
-            <button class="buttonstore" id="sellapple">20 Maçãs: Barraca de Maçã (R$1/s)<span class="marketplacenum">Quant: <span id="sellapplenum">0</span></button>
-            <button class="buttonstore" id="sellwatermelon">30 Melancias: Barraca de Melancia (R$3/s)<span class="marketplacenum">Quant: <span id="sellwatermelonnum">0</span></button>
+            <button class="buttonstore naoSelecionavel" id="sellapple"><span id="itemnumeroquatro">20 Maçãs: Barraca de Maçã (R$1/s)</span><span class="marketplacenum">Quant: <span id="sellapplenum">0</span></button>
+            <button class="buttonstore naoSelecionavel" id="sellwatermelon"><span id="itemnumerocinco">30 Melancias: Barraca de Melancia (R$3/s)</span></span><span class="marketplacenum">Quant: <span id="sellwatermelonnum">0</span></button>
+            <button class="buttonstore naoSelecionavel" id="sellpineapple"><span id="itemnumeroseis">35 Abacaxis: Barraca de Abacaxi (R$5/s)</span><span class="marketplacenum">Quant: <span id="sellpineapplenum">0</span></span></button>
+          </div>
+        </div>
+        <div class="yourstore">
+          <div class="titulo">
+            <h1 class="titulomarketplacerebirth poppins-semibold naoSelecionavel">Rebirth</h1>
+          </div>
+          <div class="store">
+            <div class="storelista">
+              <button class="buttonstorerebirth naoSelecionavel" id="btsr">Dar Rebirth (Quantidade de Rebirth: <span id="rebirthnum">0</span>)</button>
+              <div class="rebirthstore naoSelecionavel">
+                <h2 class="rebirthstoreh2">Requisitos:</h2>
+                <div class="rebirthstorelist">
+                  <p class="rebirthstorelistp" id="rebirthstorelistpu">150 Barracas de Maçã</p>
+                  <p class="rebirthstorelistp" id="rebirthstorelistpd">200 Barracas de Melancia</p>
+                  <p class="rebirthstorelistp" id="rebirthstorelistpt">250 Barracas de Abacaxi</p>
+                  <p class="rebirthstorelistp" id="rebirthstorelistpq">1.000.000 de Dinheiro</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

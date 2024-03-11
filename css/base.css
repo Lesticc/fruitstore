@@ -10,7 +10,7 @@
 body{
     height:100%;
     width:100%;
-    background-color:#121212;
+    background-color:#121111;
 }
 .money{
     margin-top:10vh;
@@ -21,7 +21,6 @@ body{
     align-items:center;
 }
 .buttonhome{
-    margin-top:3vh;
     height:8vh;
     width:30vh;
     font-size:large;
@@ -32,17 +31,28 @@ body{
     text-shadow:2vh;
     font-weight:700;
 }
+.botaohomedpc{
+    margin-top:3vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .buttonhome:hover, .buttonstore:hover{
     background:linear-gradient(120deg, #73ddf7 0%, #778fc0 100%);
     cursor:pointer;
 }
 .buttonstore{
+    background:linear-gradient(120deg, #73ddf7 0%, #8da2cd 100%);
+}
+.buttonstorerebirth{
+    background:linear-gradient(120deg, #f77378 0%, #ce4343 100%); 
+}
+.buttonstore, .buttonstorerebirth{
     margin-top:3vh;
     height:9vh;
     width:35vh;
     font-size:large;
     border-radius:12px;
-    background:linear-gradient(120deg, #73ddf7 0%, #8da2cd 100%);
     border-color:black;
     color:rgb(256, 256, 256);
     text-shadow:2vh;
@@ -53,10 +63,13 @@ body{
 .items, .yourstore{
     margin-top:7vh;
 }
-.titulomarketplace{
+.titulomarketplace, .titulomarketplacerebirth{
     font-size:xx-large;
     text-align:center;
     color:#d1d1d1;
+}
+.titulomarketplacerebirth{
+    color:#de8989;
 }
 .marketplacenum{
     font-size:medium;
@@ -97,7 +110,18 @@ body{
 .footer{
     padding-top:20px;
 }
-
+.rebirthstore{
+    margin-top:3vh;
+}
+.rebirthstorelist{
+    margin-top:1vh;
+}
+.rebirthstorelistp{
+    color:#ca9393;
+}
+.rebirthstoreh2{
+    color:#c28282;
+}
 /*sobre.html*/
 
 .home-sobrehtml{
@@ -107,4 +131,8 @@ body{
 }
 .text-home-sobrehtml{
     margin-top:5vh;
+}
+.text-home-sobrehtml-versao{
+    font-size:small;
+    color:#f77378;
 }
