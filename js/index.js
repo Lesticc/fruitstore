@@ -51,7 +51,7 @@ window.onload = () => {
       dinheirototal.innerText = `${Math.round(dinheirot)}`
       dinheiro.innerText = `${Math.round(totalMoney)}`;
       dinheirofeito.innerText = `${Math.round(dinheirof)}`
-      console.log(`${work} || ${tbdme} || ${tbdme/10}`)
+      /*console.log(`${work} || ${tbdme} || ${tbdme/10}`)*/
     };
 
     function ifnivel() {
@@ -265,7 +265,7 @@ window.onload = () => {
             if(totalAbacaxi >= 40){
                 tbdab += buy
                 totalAbacaxi -=40
-                abacaxi.innerText = `${totalMelancia}`
+                abacaxis.innerText = `${totalMelancia}`
                 barracasdeabacaxis.innerText = `${tbdab}`
                 cps += 5
                 clicksps.innerText = `${cps}`
@@ -282,7 +282,6 @@ window.onload = () => {
                 clicksps.innerText = `${cps}`
             }else{pobre()}}
         }else if(nivel == 2){
-            console.log('BDAB')
             if(totalAbacaxi >= 80){
                 tbdab += buy
                 abacaxis -= 80
@@ -400,9 +399,13 @@ window.onload = () => {
             tbdab = Number(localStorage.getItem('tbdab'));
             barracasdeabacaxis.innerText = `${tbdab}`
           }
-        /*13*/    if(localStorage.getItem('nivel') != null) {
+        /*15*/    if(localStorage.getItem('nivel') != null) {
             nivel = Number(localStorage.getItem('nivel'));
           }
+        /*16*/    if(localStorage.getItem('dpc') != null) {
+            dpc = Number(localStorage.getItem('dpc'))
+            dinheiropc.innerText = `${dpc}`
+        }
     }
         
           loadGame();
@@ -420,15 +423,17 @@ window.onload = () => {
             localStorage.setItem('tbdma', tbdma) //10
             localStorage.setItem('tbdme', tbdme) //11
             localStorage.setItem('btsrnum', btsrnum) //12
-            localStorage.setItem('totalAbacaxi', totalAbacaxi)
-            localStorage.setItem('tbdab', tbdab)
-            localStorage.setItem('nivel', nivel)
+            localStorage.setItem('totalAbacaxi', totalAbacaxi) //13
+            localStorage.setItem('tbdab', tbdab) //14
+            localStorage.setItem('nivel', nivel) //15
+            localStorage.setItem('dpc', dpc) //16
           }
 
     }
 
     function resetData() {
         totalMoney = 0;
+        dpc = 1;
         work = 1;
         dinheirof = 0;
         dinheirop = 0;
