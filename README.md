@@ -27,3 +27,11 @@ Ps: Agora você consegue mudar o valor das varíaveis pelo console + função de
 - Bugs Corrigidos e Atualizações (12/03/2024)
     - Erro no js que o botão inteiro virava o número de abacaxis;
     - Elementos "meta" para o site ter mais facilidade para ser indexado nos navegadores
+
+## 
+- V1.2 Beta (14/03/2024)
+Oi, estou aqui denovo, uma correria para trazer essa versão mas, estou aqui
+- Novos níveis! 3, 4, 5
+
+Nada demais, porém é bem cansativo de fazer, ainda mais em uma rotina corrida, mas espero que gostem :) 
+- Dê sugestões! Contato discord: lest1c; Contato insta: @oleusatico
