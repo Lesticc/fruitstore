@@ -497,7 +497,7 @@ window.onload = () => {
         }else if(nivel == 2){
             if(totalAbacaxi >= 80){
                 tbdab += buy
-                abacaxis -= 80
+                totalAbacaxi -= 80
                 abacaxis.innerText = `${totalAbacaxi}`
                 barracasdeabacaxis.innerText = `${tbdab}`
                 cps += 15
@@ -515,7 +515,7 @@ window.onload = () => {
         }else if(nivel == 3){
             if(totalAbacaxi >= 120){
                 tbdab += buy
-                abacaxis -= 120
+                totalAbacaxi -= 120
                 abacaxis.innerText = `${totalAbacaxi}`
                 barracasdeabacaxis.innerText = `${tbdab}`
                 cps += 45
@@ -533,7 +533,7 @@ window.onload = () => {
         }else if(nivel == 4){
             if(totalAbacaxi >= 200){
                 tbdab += buy
-                abacaxis -= 200
+                totalAbacaxi -= 200
                 abacaxis.innerText = `${totalAbacaxi}`
                 barracasdeabacaxis.innerText = `${tbdab}`
                 cps += 135
