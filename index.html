@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="./src/css/texto.css">
 </head>
 <body>
-  <div class="main">
+  <div class="mainindex">
     <div class="header">
       <header class="header-main-header">
         <div class="header-stats-main">
@@ -38,13 +38,13 @@
         </div>
         <div class="header-link-otherpages">
           <ul> 
-            <a href="./ajuda.html" class="lato-bold aheader-link-otherpages" target="_blank">Ajuda</a>
-            <a href="./sobre.html" class="lato-bold aheader-link-otherpages" target="_blank">Sobre</a>
+            <button class="lato-bold aheader-link-otherpages" id="botaoajuda">Ajuda</button>
+            <button class="lato-bold aheader-link-otherpages" id="botaosobre">Sobre</button>
           </ul> 
         </div>  
       </header>
     </div>
-    <div class="home">
+    <div id="home-index"> <!-- Home index -->
       <div class="money">
         <p class="poppins-semibold dinheiro naoSelecionavel">Dinheiro: <span id="money" class="spanmoney">0</span></p>
       </div>
@@ -101,6 +101,50 @@
           </div>
         </div>
       </div>
+     </div>
+    </div> <!--Home index - Final -->
+    <div id="home-ajuda" style="display:none;"> <!-- Home ajuda -->
+      <div class="home-sobrehtml">
+          <div class="text-home-sobrehtml">
+              <h1>Central de Ajuda</h1>
+              <br>
+              <p>Aqui será onde suas dúvidas sobre o jogo serão respondidas.</p>
+              <br><br>
+              <h2>Como jogar?</h2>
+              <br>
+              <p>Você consegue R$1 a cada vez que você aperta o botão "Ganhar Dinheiro", assim você pode comprar suas coisas.</p>
+              <br><br>
+              <h2>Como conseguir clicks por segundo?</h2>
+              <br>
+              <p>Comprando 20 laranjas (com R$100), você comprará a Barraca de Maçã logo na parte inferior do site. Assim também funcionando para o abacaxi.</p>
+          </div>
+      </div>
+  </div> <!-- Home ajuda - Final -->
+  <div class="home-sobrehtml" id="home-sobre" style="display:none;"> <!-- Home sobre -->
+    <div class="text-home-sobrehtml">
+      <h1>Sobre o Fruit Store</h1>
+      <p class="text-home-sobrehtml-versao">(Beta V1.3)</p>
+      <br>
+      <p>É um jogo clicker, que você compra frutas, faz sua loja e começa a ganhar dinheiro, para investir cada vez mais. O jogo ainda está no processo de desenvolvimento, sendo esse seu lançamento
+          beta. Para testes e divulgação.
+      </p>
+      <br><br>
+      <h2>Inspirações</h2>
+      <br>
+      <p>MoneyClicker - Lohran</p>
+      <p>CookieClicker - Julien</p>
+      <br><br>
+      <h2>Pessoas especiais</h2>
+      <br>
+      <p>Meus amigos da escola (:D)</p>
+      <p>Lohran pelas suas ajudas no JS</p>
+      <br><br>
+      <h2>Bastidores</h2>
+      <br>
+      <p>Progamação, Estilizagem, Estrutura: Lestic</p>
+    </div>
+   </div> <!-- Home sobre final-->
+  </div>
     <div class="footer">
       <footer>
         <p>Copyright, 2024 © ● Feito por Lestic</p>

@@ -35,3 +35,7 @@ Oi, estou aqui denovo, uma correria para trazer essa versão mas, estou aqui
 
 Nada demais, porém é bem cansativo de fazer, ainda mais em uma rotina corrida, mas espero que gostem :) 
 - Dê sugestões! Contato discord: lest1c; Contato insta: @oleusatico
+
+##
+- V1.3 Beta (30/03/2024)
+Não tão significativo, porém agora todas as páginas estão concentradas em uma só, fazendo com que você não tenha que ficar abrindo muitas páginas, carregando páginas e você pode ganhar dinheiro (com dinheiro p/s) mesmo olhando outra página! Eu me via forçado fazer isso

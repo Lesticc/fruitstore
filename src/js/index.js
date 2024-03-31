@@ -1,7 +1,66 @@
 window.onload = () => {
 
-    function iniciar() {
-        console.log()
+    const homeindex = document.getElementById("home-index")
+    const homeajuda = document.getElementById("home-ajuda")
+    const homesobre = document.getElementById("home-sobre")
+
+    const linkajuda = document.getElementById("botaoajuda")
+    const linksobre = document.getElementById("botaosobre")
+
+    // Sistema de Link
+    index = 1
+    ajuda = 0 
+    sobre = 0
+
+    function abrirajuda() {
+        index = 0
+        ajuda = 1
+        sobre = 0
+        linksobre.innerText = `Sobre`
+        linkajuda.innerText = `Voltar`
+        homeindex.style.display = `none`
+        homesobre.style.display = `none`
+        homeajuda.style.display = `block`
+    }
+    function abrirsobre() {
+        index = 0
+        ajuda = 0
+        sobre = 1
+        linksobre.innerText = `Voltar`
+        linkajuda.innerText = `Ajuda`
+        homeindex.style.display = `none`
+        homesobre.style.display = `block`
+        homeajuda.style.display = `none`
+    }
+    function abririndex() {
+        index = 1
+        ajuda = 0
+        sobre = 0
+        linksobre.innerText = `Sobre`
+        linkajuda.innerText = `Ajuda`
+        homeindex.style.display = `block`
+        homesobre.style.display = `none`
+        homeajuda.style.display = `none`
+    }
+
+    linkajuda.onclick = function(){
+        if(index == 1){
+            abrirajuda();
+        }else if(sobre == 1){
+            abrirajuda()
+        }else if(ajuda == 1){
+            abririndex()
+        }
+    }
+
+    linksobre.onclick = function(){
+        if(index == 1){
+            abrirsobre()
+        }else if(sobre == 1){
+            abririndex()
+        }else if(ajuda == 1){
+            abrirsobre()
+        }
     }
 
     function pobre() {

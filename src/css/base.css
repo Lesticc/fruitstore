@@ -102,6 +102,11 @@ body{
 .aheader-link-otherpages{
     color:#d1d1d1;
     padding:10px;
+    background:0;
+    border:0;
+    cursor:pointer;
+    font-size:larger;
+    margin-left:5px;
 }.aheader-link-otherpages:hover{
     color:#c5c5c5;
     text-decoration:underline;
